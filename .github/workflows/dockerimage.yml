@@ -17,7 +17,7 @@ jobs:
         uses: HurricanKai/Publish-Docker-Github-Action@master
         if: "!contains(github.ref, 'refs/tags/v') && !contains(github.ref, 'refs/pull')"
         with:
-          name: tarioch/fava
+          name: tarioch/jupyter
           snapshot: true
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
